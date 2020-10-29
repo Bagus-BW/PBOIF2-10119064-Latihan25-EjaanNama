@@ -21,10 +21,10 @@ public class PBOIF210119064Latihan25EjaanNama {
      */
     
     public static void ejaNama(String nama){
-        System.out.println("Ejaan untuk " + "'" + nama + "'" + " adalah");
-        String kata[] = nama.split("|");
-        for (int i = 0; i < kata.length; i++) {
-            System.out.println("Huruf ke-" + (i+1) + " : " + kata[i]);
+        System.out.println("Ejaan untuk " + "'" + nama + "'" + " adalah : ");
+        String ejaan[] = nama.split("|");
+        for (int i = 0; i < ejaan.length; i++) {
+            System.out.println("Huruf ke-" + (i+1) + " : " + ejaan[i]);
         }
     }
     
@@ -37,6 +37,7 @@ public class PBOIF210119064Latihan25EjaanNama {
         System.out.print("Masukkan nama depan anda untuk di eja : ");
         nama = keyboard.next();
         
+        System.out.println("");
         ejaNama(nama);
     
     }
